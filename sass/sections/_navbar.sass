@@ -1,24 +1,29 @@
-.header
-    
-
-.navbar
+ 
+.menu  
+    display: flex
+    align-items: center
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    height: 95px
+    width: 100%
+    max-width: 1600px
     position: fixed
     z-index: 99
-    
-    &__logo
-        
-nav
-    margin: auto   
-    width: 100%
-    
+    top: 35px
 
-.menu
-    
-    &-wrap
-    display: flex
-    flex-direction: row
-    align-items: center
-    min-height: 95px
+    &__item
+        list-style: none
+        &:nth-child(2)::before
+            content: "."
+            bottom: 0
+            left: 45px
+            color: inherit
+        &:nth-child(5)::before
+            content: "."
+            bottom: 0
+            left: 45px
+            color: inherit
     &__link
         text-transform: uppercase
         text-decoration: none
@@ -26,4 +31,10 @@ nav
         color: #4d4959
         +bold
         letter-spacing: 3px
+        padding: 0px 45px
+
+            
+    &__logo
+        align-self: center
+        height: 100%
 

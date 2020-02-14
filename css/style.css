@@ -4,9 +4,10 @@
   padding: 0;
 }
 
-body {
+.container {
   max-width: 1600px;
   margin: auto;
+  background-color: #f7f7f7;
 }
 
 @font-face {
@@ -43,30 +44,49 @@ body {
 
 body {
   font-family: 'Lato Regular', sans-serif;
-}
-
-.navbar {
-  position: fixed;
-  z-index: 99;
-}
-
-nav {
-  margin: auto;
-  width: 100%;
+  background-color: #f7f7f7;
 }
 
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 95px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 95px;
+  width: 100%;
+  max-width: 1600px;
+  position: fixed;
+  z-index: 99;
+  top: 35px;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.menu__item:nth-child(2)::before {
+  content: ".";
+  bottom: 0;
+  left: 45px;
+  color: inherit;
+}
+
+.menu__item:nth-child(5)::before {
+  content: ".";
+  bottom: 0;
+  left: 45px;
+  color: inherit;
 }
 
 .menu__link {
@@ -76,10 +96,67 @@ nav {
   color: #4d4959;
   font-family: 'Lato Bold', serif;
   letter-spacing: 3px;
+  padding: 0px 45px;
+}
+
+.menu__logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 100%;
 }
 
 .hero {
   position: relative;
   z-index: 0;
+}
+
+.hero-bg {
+  width: 100%;
+}
+
+.about_us-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about_us__icon {
+  margin-top: 100px;
+  padding: 17px 0;
+}
+
+.about_us__title {
+  padding: 17px 0;
+}
+
+.about_us__text {
+  font-family: 'Lato Regular', sans-serif;
+  color: #848789;
+  width: 65%;
+  padding: 17px 0;
+  text-align: center;
+  margin-bottom: 130px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  color: #353738;
+  font-family: 'Lato Bold', serif;
+  letter-spacing: 3px;
 }
 /*# sourceMappingURL=style.css.map */
