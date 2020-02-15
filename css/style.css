@@ -143,12 +143,11 @@ body {
 }
 
 .about_us__text {
-  font-family: 'Lato Regular', sans-serif;
-  color: #848789;
   width: 65%;
   padding: 17px 0;
-  text-align: center;
   margin-bottom: 130px;
+  font-size: 18px;
+  color: #848789;
 }
 
 .title {
@@ -158,5 +157,12 @@ body {
   color: #353738;
   font-family: 'Lato Bold', serif;
   letter-spacing: 3px;
+}
+
+.text {
+  font-family: 'Lato Regular', sans-serif;
+  color: #848789;
+  text-align: center;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
