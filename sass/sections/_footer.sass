@@ -1,0 +1,52 @@
+footer
+    max-width: 1100px
+    background-color: #f7f7f7
+    margin: 0 auto
+.footer 
+    
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: center
+    &__column
+        width: 245px
+        margin: 100px 0
+
+
+    &-address
+        display: flex
+        align-items: left
+        flex-direction: column
+        &__row
+            color: #848789
+            font-size: 14px
+            +italic
+            &_city
+                +bold
+                font-size: 16px
+
+
+    &-social
+        display: flex
+        justify-content: center
+        height: 100%
+
+
+    &-by
+        display: flex
+        justify-content: flex-end
+
+.by 
+    color: #848789
+    font-size: 14px
+    +italic
+    align-self: center
+    padding-right: 10px
+
+
+
+.social
+    padding: 0 8px 
+
+
+.logo 
