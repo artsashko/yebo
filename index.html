@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>YEBO Bycicle</title>
     <link rel="stylesheet" href="css/normalize.css">
@@ -12,10 +12,17 @@
 
 </head>
 
-<body class="container">
+<body class="wrapper">
 
     <header class="header">
         <nav class="nav">
+            <div class="nav__logo"><img src="img/Logo.png" alt="Logo" class="logo"></div>
+            <div class="nav__icon">
+				<span></span>
+				<span></span>
+				<span></span>
+            </div>
+            <div class="menu__body">
             <ul class="menu">
                 <li class="menu__item"> <a href="#" class="menu__link link">about us</a>
                     <!-- /.menu__link -->
@@ -33,6 +40,7 @@
                     <!-- /.menu__link -->
                 </li>
             </ul>
+            </div>
         </nav>
         <!-- /.menu -->
 
@@ -245,7 +253,9 @@
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
