@@ -990,4 +990,10 @@ footer {
     margin: 0;
   }
 }
+
+@media (max-width: 425px) {
+  .footer {
+    height: 200px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
