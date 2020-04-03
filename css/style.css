@@ -93,10 +93,10 @@ button {
 
 @media (max-width: 450px) {
   .title {
-    font-size: 14px;
+    font-size: 16px;
   }
   .text {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -336,14 +336,18 @@ button {
 @media (max-width: 450px) {
   .about-us__title {
     padding: 10px 0;
+    width: 85%;
+    text-align: center;
   }
   .about-us__icon {
     padding: 10px 0;
+    margin-top: 50px;
   }
   .about-us__text {
-    padding: 10px 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
+    width: 85%;
+    margin: 0;
   }
 }
 
@@ -866,6 +870,7 @@ button {
   .contact__input {
     text-align: center;
     width: 100%;
+    margin-bottom: 5px;
   }
 }
 
