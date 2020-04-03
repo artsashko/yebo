@@ -979,6 +979,7 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     margin: 5px 0;
+    padding: 7px 0;
   }
   .footer-by {
     -webkit-box-pack: center;
