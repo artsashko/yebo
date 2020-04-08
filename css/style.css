@@ -962,6 +962,9 @@ footer {
         -ms-flex: 0 1 33.333%;
             flex: 0 1 33.333%;
   }
+  .footer-address {
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 757px) {
@@ -970,6 +973,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 250px;
   }
   .footer__column {
     -webkit-box-flex: 1;
@@ -988,12 +992,6 @@ footer {
   }
   .footer-logo {
     margin: 0;
-  }
-}
-
-@media (max-width: 425px) {
-  .footer {
-    height: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
