@@ -11,10 +11,17 @@ ready(() => {
 		let iconMenu=document.querySelector(".nav__icon");
 		let body=document.querySelector("body");
 		let menuBody=document.querySelector(".menu__body");
+		let menuLink=document.querySelector("a.menu__link");
 	iconMenu.addEventListener("click", (e) => {
 		iconMenu.classList.toggle("active");
 		body.classList.toggle("lock");
 		menuBody.classList.toggle("active");
+	});
+	menuLink.addEventListener("click", (e) => {
+		iconMenu.classList.remove("active");
+		body.classList.remove("lock");
+		menuBody.classList.remove("active");
+		menuLink.classList.add("rr");
 	});
 
 	//SLIDER
@@ -27,23 +34,6 @@ ready(() => {
 		sliderItem.mount();
 	});
 
-	//IBG
 
 });
 
-
-/*
-
-		let element = document.createElement("div");
-	element.classList.add("content", "active");
-	element.innerHTML = "<strong>Всем привет!</strong> Вы прочитали важное сообщение.";
-	document.querySelector(".mainblock").append(element);
-
-	if(iconMenu.classList.contains('active')){
-		
-	}
-	document.querySelectorAll(".box")
-		.forEach(el => {
-			el.style.display = "none"
-		});
-*/

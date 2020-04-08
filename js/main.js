@@ -250,5 +250,10 @@ $('.nav__icon').click(function(event) {
 	$('body').toggleClass('lock');
 });
 
+$('.menu__link').click(function(event) {
+	$('.nav__icon').removeClass('active');
+	$('.menu__body').removeClass('active');
+	$('body').removeClass('lock');
+});
 
 });
