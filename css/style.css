@@ -956,14 +956,14 @@ footer {
 }
 
 @media (max-width: 1100px) {
+  .footer {
+    display: block;
+  }
   .footer__column {
     margin: 30px 0;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33.333%;
             flex: 0 1 33.333%;
-  }
-  .footer-address {
-    margin-top: 15px;
   }
 }
 
@@ -983,7 +983,7 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     margin: 5px 0;
-    padding: 7px 0;
+    padding: 15px 0;
   }
   .footer-by {
     -webkit-box-pack: center;
